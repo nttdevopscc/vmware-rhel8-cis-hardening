@@ -321,14 +321,28 @@
       - rule_5.2.15
 
 - name: "SCORED | 5.2.16 | Ensure SSH PAM is enabled"
+  command: /bin/true
+
 - name: "SCORED | 5.2.17 | Ensure SSH AllowTcpForwarding is disabled"
+  command: /bin/true
+
 - name: "SCORED | 5.2.18 | Ensure SSH MaxStartups is configured"
+  command: /bin/true
+
 - name: "SCORED | 5.2.19 | Ensure SSH MaxSessions is set to 4 or less"
+  command: /bin/true
+
 - name: "SCORED | 5.2.20 | Ensure system-wide crypto policy is not over-ridden"
+  command: /bin/true
 
 - name: "SCORED | 5.3.1 | PATCH | Create custom authselect profile"
+  command: /bin/true
+
 - name: "SCORED | 5.3.2 | PATCH | Select authselect profile"
+  command: /bin/true
+
 - name: "SCORED | 5.3.3 | PATCH | Ensure authselect includes with-faillock"
+  command: /bin/true
 
 - name: "SCORED | 5.4.1 | PATCH | Ensure password creation requirements are configured"
   lineinfile:
