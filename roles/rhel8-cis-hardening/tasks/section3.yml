@@ -407,9 +407,16 @@
       - notimplemented
 
 - name: "SCORED | 3.4.4.2.1 | PATCH | Ensure IPv6 default deny firewall policy"
+  command: /bin/true
+
 - name: "SCORED | 3.4.4.2.2 | PATCH | Ensure IPv6 loopback traffic is configured"
-- name: "NOTSCORED | 3.4.4.2.3 | PATCH | Ensure IPv6 outbound and established connections are configured"      
+  command: /bin/true
+
+- name: "NOTSCORED | 3.4.4.2.3 | PATCH | Ensure IPv6 outbound and established connections are configured"
+  command: /bin/true
+
 - name: "NOTSCORED | 3.4.4.2.4 | PATCH | Ensure IPv6 firewall rules exist for all open ports"
+  command: /bin/true
 
 - name: "SCORED | 3.5 | PATCH | Ensure wireless interfaces are disabled"
   command: /bin/true
