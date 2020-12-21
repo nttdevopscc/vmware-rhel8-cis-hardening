@@ -645,6 +645,7 @@
       - rule_1.6.2
 
 - name: "SCORED | 1.7.1.1 | PATCH | Ensure SELinux is installed"
+  command: /bin/true
 
 - name: "SCORED | 1.7.1.2 | PATCH | Ensure SELinux is not disabled in bootloader configuration"
   replace:
