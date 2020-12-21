@@ -348,6 +348,7 @@
       - rule_1.1.22
 
 - name: "SCORED | 1.1.23 | PATCH | Disable USB Storage"
+  command: /bin/true
 
 - name: "NOTSCORED | 1.2.1 | PATCH | Ensure Red Hat Subscription Manager connection is configured"
   command: yum check-update
