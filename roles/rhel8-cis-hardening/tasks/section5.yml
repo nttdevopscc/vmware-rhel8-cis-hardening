@@ -160,9 +160,16 @@
       - rule_5.2.1
 
 - name: "SCORED | 5.2.2 | PATCH | Ensure SSH access is limited"
+  command: /bin/true
+
 - name: "SCORED | 5.2.3 | PATCH | Ensure permissions on SSH private host key files are configured"
-- name: "SCORED | 5.2.4 | PATCH | Ensure permissions on SSH public host key files are configured"      
+  command: /bin/true
+
+- name: "SCORED | 5.2.4 | PATCH | Ensure permissions on SSH public host key files are configured"
+  command: /bin/true
+
 - name: "SCORED | 5.2.5 | PATCH | Ensure SSH LogLevel is appropriate"
+  command: /bin/true
 
 - name: "SCORED | 5.2.6 | PATCH | Ensure SSH X11 forwarding is disabled"
   lineinfile:
@@ -433,9 +440,14 @@
       - rule_5.5.1.4
       - notimplemented
 
-- name: "SCORED | 5.5.1.5 | PATCH | Ensure all users last password change date is in the past"      
+- name: "SCORED | 5.5.1.5 | PATCH | Ensure all users last password change date is in the past"
+  command: /bin/true
+
 - name: "SCORED | 5.5.2 | PATCH | Ensure system accounts are secured"
+  command: /bin/true
+
 - name: "SCORED | 5.5.3 | PATCH | Ensure default user shell timeout is 900 seconds or less"
+  command: /bin/true
 
 - name: "SCORED | 5.5.4 | PATCH | Ensure default group for the root account is GID 0"
   command: usermod -g 0 root

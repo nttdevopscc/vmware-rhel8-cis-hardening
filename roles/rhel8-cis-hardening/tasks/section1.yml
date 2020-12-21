@@ -694,6 +694,7 @@
       - rule_1.7.1.4
 
 - name: "SCORED | 1.7.1.5 | PATCH | Ensure no unconfined services exist"      
+  command: /bin/true
 
 - name: "SCORED | 1.7.1.6 | PATCH | Ensure SETroubleshoot is not installed"
   yum:
@@ -840,4 +841,6 @@
       - skip_ansible_lint
 
 - name: "SCORED | 1.10 | PATCH | Ensure system-wide crypto policy is not legacy"
-- name: "SCORED | 1.11 | PATCH | Ensure system-wide crypto policy is FUTURE or FIPS"      
+  command: /bin/true
+- name: "SCORED | 1.11 | PATCH | Ensure system-wide crypto policy is FUTURE or FIPS"
+  command: /bin/true    

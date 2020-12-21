@@ -406,4 +406,7 @@
       - rule_6.2.18
 
 - name: "SCORED | 6.2.19 | PATCH | Ensure shadow group is empty"
+  command: /bin/true
+
 - name: "SCORED | 6.2.20 | PATCH | Ensure all users' home directories exist"
+  command: /bin/true

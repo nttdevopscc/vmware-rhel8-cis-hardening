@@ -269,19 +269,34 @@
       - rule_3.3.4
 
 - name: "SCORED | 3.4.1.1 | PATCH | Ensure a Firewall package is installed"
+  command: /bin/true
 
 - name: "SCORED | 3.4.2.1 | PATCH | Ensure firewalld service is enabled and running"
+  command: /bin/true
+
 - name: "SCORED | 3.4.2.2 | PATCH | Ensure iptables is not enabled"
+  command: /bin/true
+
 - name: "SCORED | 3.4.2.3 | PATCH | Ensure nftables is not enabled"
+  command: /bin/true
+
 - name: "SCORED | 3.4.2.4 | PATCH | Ensure deafult zone is set"
+  command: /bin/true
+
 - name: "NOTSCORED | 3.4.2.5 | PATCH | Ensure network interfaces are assigned to appropriate zone"
+  command: /bin/true
+
 - name: "NOTSCORED | 3.4.2.6 | PATCH | Ensure unnecessary services and ports are not accepted"
+  command: /bin/true
 
 - name: "NOTSCORED | 3.4.3.1 | PATCH | Ensure iptables are flushed"
+  command: /bin/true
+
 - name: "SCORED | 3.4.3.2 | PATCH | Ensure a table exists"
+  command: /bin/true
+
 - name: "NOTSCORED | 3.4.3.3 | PATCH | Ensure base chains exist"
-
-
+  command: /bin/true
 
 - name: "SCORED | 3.4.3.4 | PATCH | Ensure loopback traffic is configured"
   command: /bin/true
@@ -347,11 +362,19 @@
       - notimplemented
 
 - name: "SCORED | 3.4.3.7 | PATCH | Ensure nftables service is enabled"
+  command: /bin/true
+
 - name: "SCORED | 3.4.3.8 | PATCH | Ensure nftables rules are permanent"
+  command: /bin/true
 
 - name: "SCORED | 3.4.4.1.1 | PATCH | Ensure default deny firewall policy"
+  command: /bin/true
+
 - name: "SCORED | 3.4.4.1.2 | PATCH | Ensure loopback traffic is configured"
-- name: "NOTSCORED | 3.4.4.1.3 | PATCH | Ensure outbound and established connections are configured
+  command: /bin/true
+
+- name: "NOTSCORED | 3.4.4.1.3 | PATCH | Ensure outbound and established connections are configured"
+  command: /bin/true
 
 - name: "SCORED | 3.4.4.1.4 | PATCH | Ensure firewall rules exist for all open ports"
   firewalld:
@@ -398,3 +421,4 @@
       - rule_3.5
 
 - name: "NOTSCORED | 3.6 | PATCH | Disable IPv6"
+  command: /bin/true
