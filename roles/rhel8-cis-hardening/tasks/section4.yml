@@ -410,8 +410,13 @@
       - notimplemented
 
 - name: "SCORED | 4.2.2.1 | PATCH | Ensure journald is configured to send logs to rsyslog"
+  command: /bin/true
+
 - name: "SCORED | 4.2.2.2 | PATCH | Ensure journald is configured to compress large log files"
+  command: /bin/true
+
 - name: "SCORED | 4.2.2.3 | PATCH | Ensure journald is configured to write logfiles to persistent disk"
+  command: /bin/true
 
 - name: "SCORED | 4.2.3 | PATCH | Ensure permissions on all logfiles are configured"
   command: find /var/log -type f -exec chmod g-wx,o-rwx {} +
