@@ -1,0 +1,8 @@
+---
+- name: RHEL8 CIS Hardening
+  hosts: rhel8_servers
+  ignore_errors: true
+  ignore_unreachable: true
+  roles:
+    - rhel8-cis-hardening
+  become: yes
