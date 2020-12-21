@@ -4,5 +4,5 @@
   ignore_errors: true
   ignore_unreachable: true
   roles:
-    - rhel8-cis-hardening
+    - redhat8-cis-hardening
   become: yes
